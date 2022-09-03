@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: MovieService
+  data:
+    mongodb:
+
+        #host: ds163182.mlab.com
+        #port: 63182
+        #username: Bhargo_RO
+        #password:
+        #set while building the image using docker
+     uri: mongodb+srv://MovieUser:OvAUtEExWTZlEk1h@cloudplaygroundcluster.lxuiq.mongodb.net/MovieDB
+     database: MovieDB
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
